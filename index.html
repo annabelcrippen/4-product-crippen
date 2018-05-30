@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- character encoding -->
+        <meta charset="UTF-8">
+        <!-- title tag -->
+        <title>Product/Company Page Project - Mr. Messina</title>
+        <!-- mobile-friendly viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- W3.CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- custom style -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#home" class="w3-bar-item w3-button">PCA'S</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+                <a href="#tasks" class="w3-bar-item w3-button w3-hide-small">Tasks</a>
+                <a href="#Q&A" class="w3-bar-item w3-button w3-hide-small">Questions and answers</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#task" class="w3-bar-item w3-button">Tasks</a>
+                <a href="#Q&A" class="w3-bar-item w3-button">Questions and Answers</a>
+            </div>
+        </div>
+        <!-- top nav, mobile -->
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-cente w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Here to Help</span>
+                  </div>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-padding-64" id="about">
+
+            <div class="w3-row w3-container">
+                <h1>About</h1>
+    
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3><a href="https://ne-arc.org/about-us/" target="_blank">Philosophy</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3><a href="https://www.mass.gov/orgs/personal-care-attendant-workforce-council" target="_blank">Rights</a></h3> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-phone-square"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3><a href="https://ne-arc.org/contact-us/" target="_blank">Contact</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Chore Section) -->
+        <section class="w3-padding-64" id="tasks">
+
+            <div class="w3-row w3-container">
+                <h1>Tasks</h1>
+                <p>Click below to find out more about what is expected from you.</p>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/chore.jpg" class="w3-image" alt="PCA helping">
+                    </div>
+                </div>
+                <div class="w3-half">
+
+                    <button onclick="accordion('eating')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Eating</button>
+
+                    <div id="eating" class="w3-container w3-hide">
+                        <p>A lot of the time, consumers will not have the ability to cook their own meals and even feeding themselves can be a challenge. Depending on the consumer, a PCA may need to cook meals and help them to use utensils. Again, the tastes of the client and how often they eat are to be respected and PCA's should only make meals when they are asked for.</p>
+                    </div>
+
+                    <button onclick="accordion('hygeine')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Hygeine</button>
+
+                    <div id="hygeine" class="w3-container w3-hide">
+                        <p>A primary job of a PCA is making sure the client has help with their hygiene habits such as brushing teeth, bathing and using products like deodorant and after shave. The ability to do these tasks is often hindered by their disability but the degreee of help they want is unique to the consumer. The most important aspect of hygiene is that you respect the clients needs and wishes for how they want the task done and how often they practise the habits. </p>
+                    </div>
+
+                    <button onclick="accordion('errands')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Errands</button>
+
+                    <div id="errands" class="w3-container w3-hide">
+                        <p>Errands are a key part of a PCA's role because often the consumer has no ability to leave the house and do daily tasks. Often, a PCA will be called upon to drive the consumer to places like the grocery store or the bank and help them to fulfill their errands. PCA's petrol money is not included in the base pay so please negotiate with your consumer if the issue arises.</p>
+                    </div>
+
+                    <button onclick="accordion('chores')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Chores</button>
+
+                    <div id="chores" class="w3-container w3-hide">
+                        <p>Chores will often include: vacuuming, cleaning windows, tidying and laundry. The consumer often has no ability to do these things on their own which is where the PCA steps in to help with the processes. Respect and listening is key for these tasks because often the consumer will have specific ways they want things to look.</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Third Parallax Image with Logo Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Teams Section) -->
+        <section class="w3-padding-64" id="Q&A">
+
+            <div class="w3-row w3-container">
+                <h1>Questions and Answers</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        
+                          <div class="w3-content w3-display-container">
+                              <img src="img/disabilityicons.jpg" class="mySlides" alt="Diagram of disabilities" style="width:100%">
+                              <img class="mySlides" src="img/graph.jpg" style="width:100%">
+                              <img class="mySlides" src="img/cooking.jpg" style="width:100%">
+
+                              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="w3-half">
+                    
+                    <!-- teams tabs menu -->
+                    <div class="w3-bar w3-theme2">
+                        <button class="w3-bar-item w3-button" onclick="openTab('Mental disabilities')">Mental disabilities</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('Physical disabilities')">Physical disabilities</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab ('Questions and Answers')">Questions and Answers</button>
+                    </div>
+                    
+                    <!-- teams tab content -->
+
+                    <div id="Mental disabilities" class="tab">
+                        <h2>Mental Disabilities</h2>
+                        <p>Mental disabilities can be to a varying degree based on what part of the brain is effected in the client. Often the client will have deficients of IQ or certain reasoning skills. A PCA will get all information on a clients conditions when they sign on to the job.</p>
+                    </div>
+
+                    <div id="Physical disabilities" class="tab" style="display:none">
+                        <h2>Physical Disabilities</h2>
+                        <p>Physical disabilities prevent your client from doing normal tasks and can be very frustrating. Conditions such as cerebral palsy or seizure disorder can make a client feel trapped while they are trying to live a normal life which isds where a PCA steps in to make them feel like they can live a normal life.</p> 
+                    </div>
+                    
+                    <div id="Questions and Answers" class="tab" style="display:none">
+                        <h2>Questions and Answers</h2>
+                        <p>Will I get to negotiate with my consumer on which tasks I am asked to do? 
+                           This depends on the consumer and their disabilities. As a PCA, your job is never firmly laid out because needs vary between consumers, if your consumer has a need for a task it is not optional whether you do it.
+                           
+                           What are the hours? 
+                           Hours also vary between consumer. The state gives a certain amount of PCA hours to the consumer in which the PCA can then work all of them or split them between another PCA.
+                        
+                           Feel free to send anymore questions to: acrippen2018@k12.andoverma.us</p>
+                    
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Javascript -->
+
+        <script src="js/topNav.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/slideshow.js"></script>
+    </body>
+
+</html>
